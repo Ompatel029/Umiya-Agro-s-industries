@@ -1,0 +1,218 @@
+    *{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: border-box;
+}
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+.logo{
+
+background-image: url("amazonlogo.jpg");
+height: 50px;
+    width:100%;
+    background-size: cover;
+}
+.border{
+   border: 2px solid transparent;
+}
+.border:hover{
+    border: 2.5px solid white;
+}
+/** box2 **/
+.add-first {
+    color: #cccccc;
+    font-size: 12px;
+    margin-left: 15px;
+}
+.add-second{
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 3px;
+}
+.add-icon{
+    display: flex;
+}
+/** box 3**/
+.nav-search{
+    height: 40px;
+    width: 600px;
+    border-radius: 4px;
+    display: flex;
+    color: black;
+    background-color: yellow;
+}
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px ;
+    border-bottom-left-radius: 4px ;
+    border: none;
+}
+.search-input{
+    width: 100%;
+    font-weight: 1rem;
+    border: none;
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+.nav-search:hover{
+    border: 3px solid orange;
+}
+/** box 4**/
+span{
+    font-size: 0.7rem;
+}
+.nav-second{
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+.nav-account{
+    display: flex;
+}
+
+/** box 5**/
+.nav-return{
+    font-size: larger;
+    justify-content: center;
+}
+/** box 6**/
+
+
+.cart i{
+ font-size: 35px;
+}
+/** panel **/
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.panel-option{
+    width:70%;
+}
+.panel-option a{
+    color:white;
+    margin-left: 17px;
+}
+
+/** hero-section **/
+.hero-section{
+    background-size: cover;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: palevioletred;
+
+
+}
+.shop-section{
+    background-color: aqua ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 00px;
+
+}
+.box{
+    border:2px solid black;
+    height: 310px;
+    width: 329px;
+    margin-left: 28px;
+    margin-top: 15px;
+}
+.box-img{
+    background-size: cover;
+    height: 230px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+.box h2{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.box a{
+    margin-left: 15px;
+    color: black;
+}
+.box-img2{
+    background-size: cover;
+    height: 215px;
+    width: 300px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.box a:hover{
+    color: blue;
+}
+.box2{
+}
+/** footer **/
+.foot-pannel1{
+    height:50px;
+    width:1517px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #37475a;
+    font-size: larger;
+    color: white;
+}
+.foot-pannel2{
+    background-color: #222f3d;
+    color:white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul{
+    margin-top: 20px;
+}
+ul a{
+    display: block;
+    color: #dddddd;
+    margin-top: 10px;
+    font-size: 0.85rem;
+}
+.foot-pannel3{
+    background-color: #222f3d;
+    color: #ffffff;
+    height: 70px;
+    border-top: 0.5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    background-image: url("WhatsApp Image 2024-01-07 at 14.43.43_d08baba0.jpg");
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+}
+#box-img{
+    border-radius: 5px;
+}
+#box2 box{
+    border-radius: 10px;
+}

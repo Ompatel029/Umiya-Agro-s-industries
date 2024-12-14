@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Umiya agro industries</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+
+</head>
+<body>
+<h2>Welcome to our sites!</h2>
+    <p>You are logged in as {{ session['email'] }}</p>
+    <header>
+        <div class="navbar">
+            <div class="nav-logo border">
+                <div class="logo">
+                </div>
+
+                </div>
+                <div class="nav-address border">
+                    <p class="add-first">Dileverd to</p>
+                    <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-second">India</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select>
+                    <option>All</option>
+                </select>
+                <input  class="search-input"   placeholder="Search grains">
+                <div class="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+            </div>
+
+            <div class="nav-acc border">
+                <p><span>Hello, sign in</span></p>
+                <p class="nav-second">Account & Lists</p>
+                <select>
+                    <option> sign in!</option>
+                    <option> create an account</option>
+
+                </select>
+            </div>
+            <div class="nav-return border">
+                <p><span>Returns</span></p>
+                <p class="nav-second">& Orders</p>
+            </div>
+            <div class="cart border">
+                <i class="fa-solid fa-cart-arrow-down"></i>
+                Cart
+            </div>
+        </div>
+
+        <div class="panel">
+            <div class="panel-all">
+            <i class="fa-solid fa-bars"></i>
+            All
+        </div>
+
+            <div class="panel-option">
+                <a  href="#">OUR FARMERS</a>
+                <a href="#">BULK PURCHASE</a>
+                <a href="#">BEST SELLING</a>
+                <a href="#">CONTACT US</a>
+        </div>
+        <div class="panel-deals">
+            <i class="fa-solid fa-phone">+91 9725347939</i>
+        </div>
+        </div>
+
+    </header>
+    <div class="hero-section ">
+        <img href="WhatsApp Image 2024-01-07 at 14.43.43_d08baba0.jpg">
+        <h1>Welcome to umiya agro industries</h1>
+        </div>
+    <div class="shop-section">
+        <div class="box2 box">
+            <h2><a href="../static/index1.html" target="_blank">Channa</a></h2>
+            <div class="box-img" style="background-image: url('../static/ChannaDal_Whole_DSC5021_06f90215-029b-410e-8053-b6516e8ce268.webp');"></div>
+                 <a href="#" >start from 250.00Rs</a>
+
+        </div>
+        <div class="box2 box">
+            <h2><a href="../static/index1.html" target="_blank">Ragi flour</a></h2>
+                    <div class="box-img" style="background-image: url('../static/DSC5291_Ragi_Flour.webp')"></div>
+                 <a href="#" >start from 250.00Rs</a>
+</div>
+<div class="box2 box">
+    <h2><a href="../static/index1.html" target="_blank">Green gram</a></h2>
+            <div class="box-img" style="background-image: url('../static/DSC5219_Greengram_dc632500-beb2-4cc4-9f5d-8b8ebb237fc7.webp');"></div>
+                 <a href="#" >start from 250.00Rs</a>
+
+        </div>
+        <div class="box2 box">
+            <h2><a href="../static/index1.html" target="_blank">Rice</a></h2>
+                    <div class="box-img" style="background-image: url('../static/9-99065_rice-grains-png.png')"></div>
+                <a href="#" >start from 175.00Rs</a>
+
+        </div>
+
+        <div class="box2 box">
+            <h2><a href="../static/index1.html" target="_blank">Wheat</a></h2>
+            <div class="box-img" style="background-image: url('../static/Wheat_DSC5001_c62a7a0f-d26e-4e48-a268-4e201a05ffd0.webp');"></div>
+                <a href="#" >start from 175.00Rs</a>
+
+        </div>
+        <div class="box2 box">
+            <h2><a href="../static/index1.html" target="_blank">Wheat flour</a></h2>
+                    <div class="box-img" style="background-image: url('../static/WHEAT-F_0d892272-cbf0-4266-ae13-7b76b05b4386.jpg')"></div>
+                <a href="#">start from 80.00Rs</a>
+
+                </div>
+        <div class="box2 box">
+            <h2><a href="../static/index1.html" target="_blank">Bajra</a></h2>
+            <div class="box-img" style="background-image: url('../static/bajra-5324228_1280.jpg');"></div>
+                 <a href="#" >start from 175.00Rs</a>
+
+        </div>
+        <div class="box2 box">
+            <h2><a href="../static/index1.html" target="_blank">Corn</a></h2>
+                    <div class="box-img" style="background-image: url('../static/corn.png')"></div>
+                <a href="#" >start from 250.00Rs</a>
+
+                </div>
+
+        <footer>
+            <div class="foot-pannel1">
+                          Back to top
+            </div>
+            <div class="foot-pannel2">
+                <ul>
+                    <p>Get to Know Us</p>
+                    <a>About Us</a>
+                    <a>Careers</a>
+                    <a>In news</a>
+                    <a>Privacy Policy</a>
+                </ul>
+                <ul>
+                <p>Connect with Us</p>
+                <a href="https://www.facebook.com/profile.php?id=100031998938618&sk=about_contact_and_basic_info">Facebook</a>
+                <a href="https://twitter.com/Ompatel02904">Twitter</a>
+                <a href="https://www.instagram.com/om.0209/">Instagram</a>
+                </ul>
+                <ul>
+                    <p>Get to Know Us</p>
+                    <a>About Us</a>
+                    <a>Careers</a>
+                    <a>In news</a>
+                    <a>Privacy Policy</a>
+                </ul>
+                <ul>
+                <p>Connect with Us</p>
+                <a href="https://www.facebook.com/profile.php?id=100031998938618&sk=about_contact_and_basic_info">Facebook</a>
+                <a href="https://twitter.com/Ompatel02904">Twitter</a>
+                <a href="https://www.instagram.com/om.0209/">Instagram</a>
+                </ul>
+            </div>
+
+            <div class="foot-pannel3">
+                <div class="logo" style="background-image: url('../static/WhatsApp Image 2024-01-07 at 14.43.43_d08baba0.jpg');">
+
+                </div>
+            </div>
+        </footer>
+ </body>
+</html>
+        </footer>
+</body>
+</html>

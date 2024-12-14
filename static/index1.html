@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>umiya agro industries</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index1.css') }}">
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 2rem;
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #333; /* Dark gray heading color */
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #555; /* Dark gray label color */
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #f9f9f9; /* Light gray background for input fields */
+}
+
+input[type="radio"] {
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button[type="submit"]:hover {
+    background-color: #45A049; /* Darker green on hover */
+}
+
+</style>
+</head>
+<body>
+
+<form action="/process_order" method="post">  <h2>Grain Order Form</h2>
+
+  <div class="form-group">
+    <label for="pincode">Pincode:</label>
+    <input type="text" name="pincode" id="pincode" maxlength="6" required>
+  </div>
+
+  <div class="form-group">
+    <label for="grain">Select Grain:</label>
+    <select name="grain" id="grain" required>
+      <option value="">Select...</option>
+      <option value="channa">Channa</option>
+      <option value="ragi_flour">Ragi Flour</option>
+      <option value="green_gram">Green Gram</option>
+              <option value="Rice">Rice</option>
+        <option value="Wheat">Wheat</option>
+              <option value="Wheat flour">Wheat flour</option>
+      <option value="Bajra">Bajra</option>
+      <option value="corn">Corn</option>
+
+
+      </select>
+  </div>
+
+  <div class="form-group">
+    <label for="quantity">Quantity:</label>
+    <input type="number" name="quantity" id="quantity" min="1" required>
+  </div>
+
+  <div class="form-group">
+    <label for="weight_option">Choose Option:</label>
+    <input type="radio" name="weight_option" id="weight_option_weight" value="weight" required>
+    <label for="weight_option_weight">Weight (in Kg):</label>
+    <input type="number" name="weight" id="weight" min="0.5" step="0.5" disabled>  <input type="radio" name="weight_option" id="weight_option_pack" value="pack">
+    <label for="weight_option_pack">Standard Pack</label>
+  </div>
+
+  <div class="form-group">
+    <button type="submit">Add to Cart</button>
+      <button type="submit">Buy order</button>
+  </div>
+
+</form>
+
+<script>
+  // Enable weight input only when weight option is selected
+  const weightOptionWeight = document.getElementById('weight_option_weight');
+  const weightInput = document.getElementById('weight');
+
+  weightOptionWeight.addEventListener('change', function() {
+    if (weightOptionWeight.checked) {
+      weightInput.disabled = false;
+    } else {
+      weightInput.disabled = true;
+      weightInput.value = "";  // Clear weight value when option changes
+    }
+  });
+</script>
+
+
+</body>
+</html>
